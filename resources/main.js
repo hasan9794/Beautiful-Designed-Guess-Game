@@ -1,11 +1,17 @@
 var newBtn = document.getElementById("btn");
+var help = document.getElementById("help");
+var info = document.getElementById("info");
+
 var mainDiv = document.getElementById("main-box");
 var turns = [];
 var Id = 0;
 
 
+
 function newgame() {
     newBtn.style.display = "none";
+    help.style.display = "none";
+    info.style.display = "none";
     
     var textNode = document.createTextNode("Choose any three boxes :-)");
     var currenttext = document.getElementById("welcome-text");

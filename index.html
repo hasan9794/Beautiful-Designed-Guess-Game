@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Mini Guess Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -16,10 +16,15 @@
 
     <div id="main-box">
         <p id="welcome-text"> Welcome to Mini Game </p>
-        <button id="btn">Play Game</button>
+        
+        <button id="btn" class="btn-style" >Play Game</button>
+        <button onclick="swal('This game is developed by Muhammad Hasan, student of Saylani Mass Traning')" id="info" class="btn-style" onclick="">Credits</button>
+        <button onclick="swal('You have three turns to select any boxes, if your boxes contains same number you win')" id="help" class="btn-style" onclick="">Help</button>
+        
     </div>
 
     <script src="resources/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
